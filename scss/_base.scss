@@ -51,31 +51,25 @@ body{
    display: none;
 }
 
-
 .gallery__tags{
    text-align: center;
    margin: 1em 0;
 
    .gallery_tag{
       color: $links-color;
-      background-color: $text-color;
+      background-color: $links-color;
       margin: 0 0.4em;
       box-sizing: border-box;
-      padding: 0.8em 2.6em 0.8em 1.7em;
+      padding: 0.8em 1.7em;
       font-size: 0.8em;
       border-radius: 50px;
       font-weight: 600;
       position: relative;
       cursor: pointer;
+   }
 
-      .tag__close{
-         -ms-transform: rotate(45deg); /* IE 9 */
-         -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-         transform: rotate(45deg);
-         position: absolute;
-         top: 10px;
-         right: 15px;
-      }
+   .active-tag{
+       background-color: $text-color;
    }
 }
 
