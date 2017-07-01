@@ -31,4 +31,13 @@ $(function() {
    });
 
 
+   // gallery filters
+
+   var filterItems = $(".galerry__projects__lists > .gallery__project");
+   var filterTag = $(".gallery__tags > .gallery_tag");
+
+
+   console.log(filterItems);
+   console.log(filterTag);
+
 });
