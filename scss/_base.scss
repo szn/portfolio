@@ -1,0 +1,167 @@
+body{
+   background-color: $main-color;
+   font-family: $main-font;
+}
+
+.header__title{
+   margin-top: 2.5em;
+   margin-bottom: 7.5em;
+   text-align: center;
+
+   h1{
+      color: $text-color;
+      padding: 0.3em;
+      font-size: 5em;
+      font-weight: 300;
+   }
+   p{
+      color: $links-color;
+      padding-bottom: 0.5em;
+      font-size: 1.1em;
+      font-weight: 400;
+
+      .break{
+         padding: 0 0.6em;
+      }
+   }
+}
+
+.navigation__menu{
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   text-transform: uppercase;
+   font-weight: 600;
+   margin: 0 auto;
+   color: $links-color;
+
+   .navigation__menu-item{
+      cursor: pointer;
+   }
+}
+
+.break__line{
+   border: 0;
+   height: 1px;
+   background-color: $links-color;
+   margin: 2em 0;
+}
+
+.jobsEducation, .about, .gallery{
+   display: none;
+}
+
+
+.gallery__tags{
+   text-align: center;
+   margin: 1em 0;
+
+   .gallery_tag{
+      color: $links-color;
+      background-color: $text-color;
+      margin: 0 0.4em;
+      box-sizing: border-box;
+      padding: 0.8em 2.6em 0.8em 1.7em;
+      font-size: 0.8em;
+      border-radius: 50px;
+      font-weight: 600;
+      position: relative;
+      cursor: pointer;
+
+      .tag__close{
+         -ms-transform: rotate(45deg); /* IE 9 */
+         -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+         transform: rotate(45deg);
+         position: absolute;
+         top: 10px;
+         right: 15px;
+      }
+   }
+}
+
+.gallery__projects{
+
+   margin: 4em 0;
+
+   .galerry__projects__lists{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .gallery__project{
+         width: 49%;
+         margin-bottom: 1.2em;
+         height: 18em;
+         background-color: $text-color;
+         position: relative;
+
+         .project__description{
+            box-sizing: border-box;
+            padding: 1em;
+            display: inline-block;
+            color: $text-color;
+            background-color: $second-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+         }
+      }
+   }
+}
+
+@for $i from 1 through 11{
+   #project#{$i}{
+      background: url("../images/project#{$i}.png");
+      background-size: cover;
+   }
+}
+
+.about__info--title{
+   text-align: right;
+   color: $text-color;
+   font-size: 5em;
+   font-weight: 300;
+
+}
+
+.about__info--description{
+   color: $text-color;
+   font-size: 1em;
+   text-align: right;
+   padding: 1em 0;
+   font-weight: 300;
+   letter-spacing: 0.1em;
+   line-height: 1.5em;
+}
+
+.contact{
+   margin: 2em 0;
+
+   .contact__links{
+      display: flex;
+      justify-content: center;
+
+      .icon__container{
+         text-align: center;
+
+         .contact__link{
+            padding: 0 0.5em;
+         }
+      }
+   }
+}
+
+.contact__copy{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   color: $text-color;
+
+   .contact__copy--link{
+      color: $links-color;
+      padding-left: 0.3em;
+      font-weight: 0;
+   }
+
+}

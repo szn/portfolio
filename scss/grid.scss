@@ -1,0 +1,22 @@
+.grid-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  .row{ // właściwości wiersza
+    display: flex;
+    justify-content: space-between;
+
+    [class*='col-'] {
+      // border: 1px solid yellow; // opcjonalnie
+    }
+
+    $colsNumber: 12; // liczba kolumn
+
+    @for $i from 1 through $colsNumber{
+      .col-#{$i}{
+        width: 100% / $colsNumber * $i;
+      }
+    }
+  }
+}
