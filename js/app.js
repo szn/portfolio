@@ -1,6 +1,6 @@
 $(function() {
 
-    // navigation set section
+    // navigation (set section)
 
     var navButtons = $(".navigation__menu > .navigation__menu-item");
     var sections = $(".section-container").find("section");
@@ -31,7 +31,7 @@ $(function() {
     });
 
 
-    // gallery filters
+    // gallery filters (filtering projects in the gallery)
 
     var filterItems = $(".galerry__projects__lists > .gallery__project");
     var filterTag = $(".gallery__tags > .gallery_tag");
@@ -63,5 +63,20 @@ $(function() {
 
         });
     });
+
+    // showing modals (showing deatils of projects in the gallery)
+
+    var modals = $(".gallery-modals").find(".modals__item");
+
+    // open window
+    filterItems.on("click", function(event){
+         modals.eq(filterItems.index($(this))).addClass("modal-show");
+    });
+
+    // close window
+    $(".close-window__icon").on("click", function(event){
+         $(this).parent().parent().removeClass("modal-show");
+    });
+
 
 });
