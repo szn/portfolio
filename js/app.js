@@ -40,29 +40,24 @@ $(function() {
         $(e).addClass("active-tag");
     });
 
-    function filterGallery() {
+    function filterGallery(event) {
 
         $(event.target).toggleClass("active-tag");
 
-        var x = $(event.target).data("filter");
+        var filterName = $(event.target).data("filter");
         var y = ($(event.target).hasClass("active-tag")) ? "block" : "none";
 
         $(filterItems).each((i, e) => {
 
-            if ($(e).data("sort") === x) {
+            if ($(e).data("sort") === filterName) {
 
                 $(e).css("display", y);
             }
         });
     }
 
-    $(filterTag).each(function(index, element) {
+    $(filterTag).on("click", filterGallery);
 
-        $(element).on("click", function(event) {
-            filterGallery();
-
-        });
-    });
 
     // showing modals (showing deatils of projects in the gallery)
 
