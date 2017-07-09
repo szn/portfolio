@@ -34,7 +34,7 @@ $(function() {
     // gallery filters (filtering projects in the gallery)
 
     var filterItems = $(".galerry__projects__lists > .gallery__project");
-    var filterTag = $(".gallery__tags > .gallery_tag");
+    var filterTag = $(".gallery__tags__tag");
 
     $(filterTag).each(function(i, e) {
         $(e).addClass("active-tag");

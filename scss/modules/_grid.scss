@@ -8,7 +8,7 @@
     justify-content: space-between;
 
     [class*='col-'] {
-      // border: 1px solid yellow; // opcjonalnie
+      box-sizing: border-box;
     }
 
     $colsNumber: 12; // liczba kolumn

@@ -1,0 +1,28 @@
+.about{
+    margin: 2em 2em;
+}
+
+@media(max-width: 960px){
+    .about__content{
+        flex-direction: column-reverse;
+    }
+    .grid-container > .row > .about__info,
+    .grid-container > .row > .about__image{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__info--description,
+    .about__info--title{
+        text-align: center;
+        padding: 2 3em;
+    }
+}   
+
+@media(max-width: 600px){
+
+    .myImage{
+        width: 80%;
+        height: 80%;
+    }
+}

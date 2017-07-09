@@ -1,0 +1,19 @@
+.contact{
+    margin-bottom: 2em;
+    text-align: center;
+    color: $text-color;
+
+    &__copy__link{
+        color: $links-color;
+        font-weight: 600;
+    }
+}
+
+.icon__container{
+    margin: 0 auto;
+}
+
+.social-icon{
+    margin: 0 0.5em;   
+    text-decoration: none;
+}

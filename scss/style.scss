@@ -1,4 +1,11 @@
-@import "variables";
-@import "grid";
-@import "reset";
+@import "./modules/reset";
+@import "./modules/variables";
+@import "./modules/grid";
+@import "./partials/mainHeader";
+@import "./partials/projectDetails";
+@import "./partials/projects";
+@import "./partials/about";
+@import "./partials/education";
+@import "./partials/contactCopy";
 @import "base";
+

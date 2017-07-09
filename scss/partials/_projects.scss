@@ -1,0 +1,115 @@
+.gallery__tags {
+    text-align: center;
+    margin: 2em;
+
+    &__tag {
+        color: $links-color;
+        background-color: $links-color;
+        margin: 0.4em;
+        padding: 0.8em 1.7em;
+        font-size: 0.8em;
+        border-radius: 50px;
+        font-weight: 600;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .active-tag {
+        background-color: $text-color;
+    }
+}
+
+.gallery__projects {
+    margin: 4em 2em;
+    height: auto;
+
+    .galerry__projects__lists {
+        list-style: none;
+        -webkit-column-count: 2; // gallery with different size immages
+        -webkit-column-gap: 0px;  // gallery with different size immages
+        -moz-column-count: 2;
+        -moz-column-gap: 0px;
+        column-count: 2;
+        column-gap: 0;
+        height: auto;
+
+        @media(max-width: 700px){
+            column-count: 1;
+        }
+
+        .gallery__project {
+            box-sizing: border-box;
+            padding: 0.3em 0.4em;
+            height: auto;
+            position: relative;
+            cursor: pointer;
+            page-break-inside: avoid;  // gallery with different size immages
+            break-inside: avoid-column;  // gallery with different size immages
+            -webkit-column-break-inside: avoid;  // gallery with different size immages
+
+            .project__description {
+                box-sizing: border-box;
+                padding: 1em;
+                display: inline-block;
+                color: $main-color;
+                background-color: $second-color;
+                position: absolute;
+                bottom: 8px;
+                left: 5px;
+            }
+        }
+    }
+}
+
+.gallery__project img{
+    width: 100%;
+    height: 100%;
+}
+.project__category {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    padding-bottom: 0.9em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.project__name {
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+// @for $i from 1 through 11{
+//    #project#{$i}{
+//       background: url("../images/project#{$i}.png");
+//       background-size: cover;
+//    }
+// }
+
+.about__info--title {
+    text-align: right;
+    color: $text-color;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.about__info--description {
+    color: $text-color;
+    font-size: 1em;
+    text-align: right;
+    padding: 1em 0;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+@media(max-width:700px) {
+    .gallery__tags{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery__projects{
+        margin: 1em 1em;
+    }
+}
