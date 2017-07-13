@@ -1,0 +1,24 @@
+.jobs__header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+
+    > h2{
+         font-weight: 100;
+         width: 200px;
+         position: relative;
+
+         &::before{
+             content: '';
+             width: 38.5px;
+             height: 6px;
+             background-color: #50E3C2;
+             position: absolute;
+             bottom: -15px;
+             left: 78px;
+         }
+    }
+}
+

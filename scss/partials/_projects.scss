@@ -86,23 +86,6 @@
 //    }
 // }
 
-.about__info--title {
-    text-align: right;
-    color: $text-color;
-    font-size: 5em;
-    font-weight: 300;
-}
-
-.about__info--description {
-    color: $text-color;
-    font-size: 1em;
-    text-align: right;
-    padding: 1em 0;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    line-height: 1.5em;
-}
-
 @media(max-width:700px) {
     .gallery__tags{
         display: flex;

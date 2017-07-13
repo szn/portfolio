@@ -2,6 +2,29 @@
     margin: 2em 2em;
 }
 
+.about__info--title {
+    text-align: left;
+    color: $text-color;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.about__info--description {
+    color: $text-color;
+    font-size: 1em;
+    text-align: left;
+    padding: 1em 0;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+.about__image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 @media(max-width: 960px){
     .about__content{
         flex-direction: column-reverse;
@@ -24,5 +47,9 @@
     .myImage{
         width: 80%;
         height: 80%;
+    }
+
+    .about__image{
+        justify-content: center;
     }
 }
