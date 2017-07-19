@@ -1,14 +1,14 @@
-.skills{
-    -webkit-column-count: 2; 
-    -webkit-column-gap: 0px;
+.skills {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0;
     -moz-column-count: 2;
-    -moz-column-gap: 0px;
+    -moz-column-gap: 0;
     column-count: 2;
     column-gap: 0;
     margin: 6em 1em;
 }
 
-.skill{
+.skill {
     box-sizing: border-box;
     padding: 2em;
     background-color: white;
@@ -17,19 +17,19 @@
     position: relative;
     width: 98%;
     height: auto;
-    page-break-inside: avoid; 
-    break-inside: avoid-column;  
-    -webkit-column-break-inside: avoid;  
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
 
-    &__title{
+    &__title {
         color: $main-color;
         font-size: 1.6em;
         font-weight: 500;
         text-align: right;
         padding-bottom: 1em;
 
-        &-line{
-            width: 38.5px;
+        &-line {
+            width: 6px;
             height: 6px;
             background-color: #50E3C2;
             display: inline-block;
@@ -37,7 +37,7 @@
         }
     }
 
-    &__category{
+    &__category {
         color: $second-color;
         font-size: 0.75em;
         font-weight: 700;
@@ -46,23 +46,21 @@
         letter-spacing: 1px;
     }
 
-    &__examples{
+    &__examples {
         color: $main-color;
         font-size: 1.1em;
         font-weight: 100;
         line-height: 1.5em;
     }
 }
-
-@media(max-width: 750px){
-    .skills{
-        -webkit-column-count: 1; 
+@media(max-width: 750px) {
+    .skills {
+        -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
     }
-    .skill{
+
+    .skill {
         width: 100%;
     }
 }
-
-

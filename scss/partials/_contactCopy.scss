@@ -1,19 +1,36 @@
-.contact{
+.contact {
     margin-bottom: 2em;
     text-align: center;
-    color: $text-color;
+    color: $main-color;
 
-    &__copy__link{
+    &__copy__link {
         color: $links-color;
         font-weight: 600;
     }
 }
 
-.icon__container{
+.icon__container {
     margin: 0 auto;
 }
 
-.social-icon{
-    margin: 0 0.5em;   
+.contact__copy--text{
+    font-size: 0.8em;
+}
+
+.social-icon {
+    margin: 0 0.5em;
     text-decoration: none;
+
+    .fa{
+        color: $links-color;
+        font-size: 2em;
+
+        &:hover{
+            color: $main-color;
+            position: relative;
+        }
+    }
+
+    
+
 }

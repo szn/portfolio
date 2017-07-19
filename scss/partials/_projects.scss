@@ -3,8 +3,8 @@
     margin: 2em;
 
     &__tag {
-        color: $links-color;
-        background-color: $links-color;
+        color: rgba(0,0,0,0.3);
+        background-color: rgba(193, 192, 184, 0.43);
         margin: 0.4em;
         padding: 0.8em 1.7em;
         font-size: 0.8em;
@@ -15,7 +15,8 @@
     }
 
     .active-tag {
-        background-color: $text-color;
+        background-color: $second-color;
+        color: white;
     }
 }
 
@@ -26,14 +27,13 @@
     .galerry__projects__lists {
         list-style: none;
         -webkit-column-count: 2; // gallery with different size immages
-        -webkit-column-gap: 0px;  // gallery with different size immages
+        -webkit-column-gap: 0; // gallery with different size immages
         -moz-column-count: 2;
-        -moz-column-gap: 0px;
+        -moz-column-gap: 0;
         column-count: 2;
         column-gap: 0;
         height: auto;
-
-        @media(max-width: 700px){
+        @media(max-width: 700px) {
             column-count: 1;
         }
 
@@ -43,16 +43,16 @@
             height: auto;
             position: relative;
             cursor: pointer;
-            page-break-inside: avoid;  // gallery with different size immages
+            page-break-inside: avoid; // gallery with different size immages
             break-inside: avoid-column;  // gallery with different size immages
-            -webkit-column-break-inside: avoid;  // gallery with different size immages
+            -webkit-column-break-inside: avoid; // gallery with different size immages
+            background-color: $background-color;
 
             .project__description {
                 box-sizing: border-box;
                 padding: 1em;
                 display: inline-block;
-                color: $main-color;
-                background-color: $second-color;
+                background-color: $main-color;
                 position: absolute;
                 bottom: 8px;
                 left: 5px;
@@ -61,38 +61,72 @@
     }
 }
 
-.gallery__project img{
+.gallery__project img {
     width: 100%;
     height: 100%;
+    mix-blend-mode: luminosity;
+    position: relative;
+
+    &:hover {
+        mix-blend-mode: normal;
+    }
 }
+
 .project__category {
     font-size: 0.6em;
     text-transform: uppercase;
     padding-bottom: 0.9em;
     font-weight: 600;
     letter-spacing: 2px;
+    color: $second-color;
 }
 
 .project__name {
     font-size: 1.3em;
     font-weight: 300;
     letter-spacing: 1px;
+    color: white;
 }
-
 // @for $i from 1 through 11{
 //    #project#{$i}{
 //       background: url("../images/project#{$i}.png");
 //       background-size: cover;
 //    }
 // }
-
 @media(max-width:700px) {
-    .gallery__tags{
+    .gallery__tags {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .gallery__projects{
-        margin: 1em 1em;
+
+    .gallery__projects {
+        margin: 1em;
+    }
+}
+
+.tag__icon {
+    display: inline-block;
+    width: auto;
+    margin-right: 7px;
+    font-size: 16px;
+    background-color: transparent;
+
+    &-rotate {
+        transform: rotate(45deg);
+        transition-duration: 0.6s;
+    }
+}
+
+.empty-gallery{
+    display: none;
+    text-align: center;
+    color: $links-color;
+
+    p{
+        margin: 2.5em 0;    
+    }
+    img{
+        margin: 2.5em 0;
     }
 }

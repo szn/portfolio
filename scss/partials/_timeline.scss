@@ -1,110 +1,131 @@
 .jobs {
-  position: relative;
-  overflow: auto;
-  margin-top: 5em;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 2px;
-    background: none;
-    left: 0;
-  }
+    position: relative;
+    overflow: auto;
+    margin-top: 5em;
 
-  &__timeline{
-      list-style: none;
-      padding: 0 0 0 1em;
-      z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background: none;
+        left: 0;
+    }
 
-      &__job{
-          padding: 1em;
-          margin-bottom: 1em;
-          position: relative;
-      }
-  }
+    &__timeline {
+        list-style: none;
+        padding: 0 0 0 1em;
+        z-index: 1;
+
+        &__job {
+            padding: 1em;
+            margin-bottom: 1em;
+            position: relative;
+        }
+    }
 }
 
- .position{
+.position {
     font-size: 1.4em;
     padding-bottom: 0.7em;
     font-weight: 500;
-    color: white;
+    color: $main-color;
     line-height: 30px;
+    -webkit-font-smoothing: antialiased;
 }
 
-.company{
+.company {
     font-size: 1.1em;
     font-weight: 100;
     padding-bottom: 0.5em;
-    color: white;
+    color:  $main-color;
+    line-height: 1.4em;
+    -webkit-font-smoothing: antialiased;
 }
 
-.time{
+.time {
     color: #50E3C2;
     font-size: 0.8em;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.mainRight, .mainLeft{
-    color: white;
+.mainLeft,
+.mainRight {
+    color:  $main-color;
     font-size: 1.4em;
 }
-
 @media screen and (min-width: 40em) {
-  
-.jobs {
-    &::before {
-        left: 50%;
-        background: white;
-    }
-    
-    &__timeline {
-        padding-left: 0;
-        max-width: 700px;
-        margin: 0 auto;
+    .jobs {
+        &::before {
+            left: 50%;
+            background: $main-color;
+        }
 
-        &__job {
-            width: 45%;
+        &__timeline {
+            padding-left: 0;
+            max-width: 700px;
+            margin: 0 auto;
+
+            &__job {
+                width: 45%;
+            }
+        }
+
+        .mainRight,
+        .right {
+            float: right;
+        }
+
+        .left,
+        .mainLeft {
+            float: left;
+        }
+
+        .right {
+            &::before {
+                content: '';
+                position: absolute;
+                height: 14px;
+                width: 14px;
+                border-radius: 50px;
+                background: #50E3C2;
+                left: -42px;
+            }
+        }
+
+        .left {
+            &::before {
+                content: '';
+                position: absolute;
+                height: 14px;
+                width: 14px;
+                border-radius: 50px;
+                background: #50E3C2;
+                right: -43px;
+            }
+        }
+
+        .jobs__timeline__job:nth-of-type(1n+1) {
+            clear: both;
         }
     }
-    
-    .right, .mainRight {
-      float: right;
-    }
-    
-    .left, .mainLeft {
-      float: left;
-    }
+}
 
-    .right{
-        &::before{
-            content: '';
-            position: absolute;
-            height: 14px;
-            width: 14px;
-            border-radius: 50px;
-            background: #50E3C2;
-            left: -42px;
-        }
-    }
+.is-hidden{
+    visibility: hidden;
+}
 
-    .left{
-        &::before{
-            content: '';
-            position: absolute;
-            height: 14px;
-            width: 14px;
-            border-radius: 50px;
-            background: #50E3C2;
-            right: -43px;
-        }
-    }
+@keyframes bounce {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		// @include transform(scale(1.2));
+	}
+}
 
-    .jobs__timeline__job:nth-of-type(1n+1) {
-      clear: both;
-    }
-  }
-
+.bounce-in{
+    animation: bounce 0.6s;
 }

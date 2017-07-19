@@ -1,5 +1,5 @@
 body {
-    background-color: $main-color;
+    background-color: $background-color;
     font-family: $main-font;
 }
 
@@ -7,4 +7,32 @@ body {
 .gallery,
 .jobsEducation {
     display: none;
+}
+
+.break__line {
+    border: 0;
+    height: 1px;
+    background-color: rgba(193, 192, 184, 0.27);
+    margin: 2em 0;
+}
+
+.arrowUp{
+   font-size: 14px;
+   height: 40px;
+   width: 40px;
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   background-color: white;
+   border-radius: 2px;
+   align-items: center;
+
+   &:before{
+       content: "Up!";
+       font-weight: 600;
+       position: absolute;
+       color: $second-color;
+       left: 22%;
+       bottom: 30%;
+   }
 }
