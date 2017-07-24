@@ -4,19 +4,24 @@ $(function() {
     
     var navigation = $(".navigation");
     var headerTitle = $(".header__title");
-    var headerHeight = headerTitle.height() + 120;
+    var navPosition = $(".navigation").position().top;
     var scrolled = "navigation__menu-scrolled";
 
-    var mobile = window.matchMedia ("screen and (max-width: 430px)" );
+    var mobile = window.matchMedia ("screen and (max-width: 830px)" );
 
     $(window).scroll(function() {
 
-        if ( $(this).scrollTop() > headerHeight) {
+        if ( $(this).scrollTop() > navPosition) {
 
              navigation.addClass(scrolled);
         
             if (mobile.matches){
-                headerTitle.css("padding-bottom", "13em");
+                headerTitle.css("padding-bottom", "10em");
+                burgerMenu.removeClass("invisible-burger-menu");
+                $(navButtons).removeClass("visible-nav-item");
+                $(burgerMenu).removeClass("open");
+
+
             } else {
                 headerTitle.css("padding-bottom", "15em");
             }
@@ -27,6 +32,8 @@ $(function() {
 
             if (mobile.matches){
                 headerTitle.css("padding-bottom", "2em");
+                burgerMenu.addClass("invisible-burger-menu");
+                $(navButtons).addClass("visible-nav-item");
             } else {
                 headerTitle.css("padding-bottom", "4.5em");
             }
@@ -41,17 +48,17 @@ $(function() {
 
     function showMobileMenu(event){
 
-        $(navButtons).toggleClass("visible-nav-item");
+        $(this).toggleClass("open");
 
-        // $(navButtons).hasClass("visible-nav-item") ? 
-        //     $(this).css("padding-bottom", "2em") : 
-        //     $(this).css("padding-bottom", "1em");
-    };
+        if ( $(this).hasClass("open") ) {
+              $(navButtons).addClass("visible-nav-item");
+        } else {
+              $(navButtons).removeClass("visible-nav-item");
+        }
+    }; 
 
     burgerMenu.on("click", showMobileMenu);
 
-
-    
     // navigation (set section)
 
     var navButtons = $(".navigation__menu > .navigation__menu-item");
@@ -84,7 +91,12 @@ $(function() {
 
     $(navButtons).on('click', function (e) {
         $('html,body').scrollTop(0);
-        $(navButtons).removeClass("visible-nav-item");
+        
+        if ( burgerMenu.attr("style") == "display: block;" ) {
+
+            $(navButtons).removeClass("visible-nav-item");
+            $(burgerMenu).removeClass("open");
+        }
     });
 
 

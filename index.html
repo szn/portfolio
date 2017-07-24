@@ -10,34 +10,39 @@
 
     <body>
 
-        <header class="header__title" >
-              <div class"grid-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="header__title__name">Kinga Sieminiak</h1>
-                            <h2 class="header__title__description">
-                                <span class="header__title__description">UX/ UI Designer</span>
+        <header class="header__title">
+            <div class "grid-container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="header__title__name">Kinga Sieminiak</h1>
+                        <h2 class="header__title__description">
+                            <span class="header__title__description">UX/ UI Designer</span>
                                 <span class="break">|</span>
-                                <span class="header__title__description">Front-End Developer</span>
-                            </h2>
-                        </div>
+                            <span class="header__title__description">Front-End Developer</span>
+                        </h2>
                     </div>
                 </div>
-        </header> 
+            </div>
+        </header>
 
         <nav class="navigation">
             <div class="grid-container">
                 <div class="row">
                     <ul class="navigation__menu col-8">
-                        <li class="navigation__menu-burger"><span></span></li>
-                        <li class="navigation__menu-item">projects</li>
-                        <li class="navigation__menu-item">about</li>
-                        <li class="navigation__menu-item">education &amp; jobs</li>
+                        <li class="navigation__menu-burger invisible-burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                        <li class="navigation__menu-item visible-nav-item">projects</li>
+                        <li class="navigation__menu-item visible-nav-item">about</li>
+                        <li class="navigation__menu-item visible-nav-item">education &amp; jobs</li>
                     </ul>
                 </div>
             </div>
         </nav>
-       
+
         <main class="section-container">
 
             <section class="gallery">
@@ -45,70 +50,123 @@
                     <div class="row">
                         <div class="gallery__tags col-12">
                             <span data-filter="1" class="gallery__tags__tag">
-                                <span class="tag__icon tag__icon-rotate">+</span>
-                                develop
+                                    <span class="tag__icon tag__icon-rotate">+</span> develop
                             </span>
                             <span data-filter="2" class="gallery__tags__tag">
-                                <span class="tag__icon tag__icon-rotate">+</span>
-                                UX/UI design
+                                    <span class="tag__icon tag__icon-rotate">+</span> UX/UI design
                             </span>
                             <span data-filter="3" class="gallery__tags__tag">
-                                <span class="tag__icon tag__icon-rotate">+</span>
-                                graphic design
+                                    <span class="tag__icon tag__icon-rotate">+</span> graphic design
                             </span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="gallery__projects col-12 filtr-container">
                             <div class="galerry__projects__lists">
-                                <article id="project1" class="gallery__project" data-sort="1">
-                                    <img src="./images/project1.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
-                                </article>
-                                <article id="project1" class="gallery__project" data-sort="3">
-                                    <img src="./images/project2.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
-                                </article>
-                                <article id="project1" class="gallery__project" data-sort="1">
-                                    <img src="./images/project3.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
-                                </article>
                                 <article id="project1" class="gallery__project" data-sort="2">
-                                    <img src="./images/project4.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">ux/xi design</p>
+                                            <h4 class="project__name">Single page design<h4>
+                                    </div>
                                 </article>
-                                <article id="project1" class="gallery__project" data-sort="3">
-                                    <img src="./images/project5.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
+                                <article id="project2" class="gallery__project" data-sort="1">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">develop</p>
+                                            <h4 class="project__name">HTML & CSS workshops<h4>
+                                    </div>
                                 </article>
-                                <article id="project1" class="gallery__project" data-sort="3">
-                                    <img src="./images/project6.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
+                                <article id="project3" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Printing design<h4>
+                                    </div>
                                 </article>
-                                <article id="project1" class="gallery__project" data-sort="2">
-                                    <img src="./images/project7.png" alt="">
-                                    <span class="project__description">
-                                        <p class="project__category">graphic design</p>
-                                        <h4 class="project__name">Coffee icon set<h4>
-                                    </span>
+                                <article id="project4" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Coffee icon set<h4>
+                                    </div>
+                                </article>
+                                <article id="project5" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Stojaki printing design<h4>
+                                    </div>
+                                </article>
+                                <article id="project6" class="gallery__project" data-sort="2">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">ux/xi design</p>
+                                            <h4 class="project__name">Coders Lab website<h4>
+                                    </div>
+                                </article>
+                                <article id="project7" class="gallery__project" data-sort="2">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">ux/xi design</p>
+                                            <h4 class="project__name">Law firm website<h4>
+                                    </div>
+                                </article>
+                                <article id="project8" class="gallery__project" data-sort="2">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">ux/xi design</p>
+                                            <h4 class="project__name">Single page PAH<h4>
+                                    </div>
+                                </article>
+                                <article id="project9" class="gallery__project" data-sort="2">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">ux/xi design</p>
+                                            <h4 class="project__name">Landing Page<h4>
+                                    </div>
+                                </article>
+                                <article id="project10" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Coders Lab printing design<h4>
+                                    </div>
+                                </article>
+                                <article id="project11" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Coders Lab stickers<h4>
+                                    </div>
+                                </article>
+                                <article id="project12" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Tipi UX stickers<h4>
+                                    </div>
+                                </article>
+                                <article id="project13" class="gallery__project" data-sort="1">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">develop</p>
+                                            <h4 class="project__name">JavaScript workshop<h4>
+                                    </div>
+                                </article>
+                                 <article id="project14" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">UX Christmas Card<h4>
+                                    </div>
+                                </article>
+                                 <article id="project15" class="gallery__project" data-sort="3">
+                                    <div class="gallery__project__image"></div>
+                                    <div class="project__description">
+                                            <p class="project__category">graphic design</p>
+                                            <h4 class="project__name">Coding Christmas Card<h4>
+                                    </div>
                                 </article>
                             </div>
                         </div>
@@ -127,12 +185,13 @@
                         <div class="about__info col-6">
                             <h1 class="about__info--title">Hi!</h1>
                             <p class="about__info--description">
-                                Lorem ipsum dolor sit amet,in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut. Cu feugait perfecto torquatos his, nobis oratio facilisis in nec, in causae placerat ius.
-                                Ne quodsi imperdiet efficiendi ius. Debet patrioque liberavisse quo ne, cu viris primis convenire vim.
+                                During last 5 years I had been working as a client, a designer and and as a person between this two before. The last one teached me the most. Every time when I do something I'm still learning how not to fulfill my own ambition and that "done" is better
+                                than "the best". I think it is the most hardest topic at each of my jobs. When I had managed the biggest project in my work life, Polish Guitar Academy, every year I had the restrictive deadline – the date when the Festival
+                                start. In the perspective of 2017 it was great lesson of how you can do something just good, but the best as you can at that time.
                             </p>
                             <p class="about__info--description">
-                                Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut. Cu feugait perfecto torquatos his, nobis oratio facilisis in nec, in causae placerat ius.
-                                Ne quodsi imperdiet efficiendi ius. Debet patrioque liberavisse quo ne, cu viris primis convenire vim.
+                                If somebody ask me, what my cultural studies gave my in my current work - I would say it was the best way to learn a mix of social, cognitive and psychology science that helps me to better understand "user experiences" and user's perception (Maybe that’s
+                                why I’m not an artist.). Nowadays I want to get more technical skills to better understand people with I am working with and know each part of product design process.
                             </p>
                         </div>
                         <div class="about__image col-6">
@@ -290,7 +349,7 @@
                             </div>
                             <div>
                                 <p class="skill__category">KNOWLEDGE</p>
-                                <h5 class="skill__examples">Znajomość zasad kompozycji i typografii oraz zagadnień produkcji poligraficznej (DTP).</h5>
+                                <h5 class="skill__examples">Knowledge of the principles of composition and typography and issues of printing production (DTP).</h5>
                             </div>
                         </div>
                         <div class="skill">
@@ -326,24 +385,44 @@
         </main>
 
         <section class="gallery-modals">
-            <div class="modals__item">
+            <div class="modals__item" id="item1">
                 <div class="modals__item--close-window">
                     <div class="close-window__icon">
-                        <p class="close-icon"></p>
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
                     </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Web design</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator, Sketch</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">UI DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/1.png" alt="web design">
                 </div>
             </div>
-            <div class="modals__item">
+
+            <div class="modals__item" id="item2">
                 <div class="modals__item--close-window">
                     <div class="close-window__icon">
-                        <p class="close-icon"></p>
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
                     </div>
                 </div>
-                    <div class="modals__item__container">
-                        <div class="modals__item__header">
-                            <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
-                            <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
-                            <div class="modals__item__details">
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
                             <div class="modals__item__details__container">
                                 <span class="details__title">TOOLS</span>
                                 <p class="details__description">Illustrator</p>
@@ -354,7 +433,345 @@
                             </div>
                         </div>
                     </div>
-                    <img src="images/stojakiIcons.png" alt="stojaki icons">
+                    <img src="images/2.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item3">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/3.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item4">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/4.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item5">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Printing design for Stojaki</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator, InDesign</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/5.png" alt="stojaki printing design">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item6">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/6.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item7">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/7.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item8">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/8.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item9">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/9.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item10">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/10.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item11">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/11.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item12">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/12.png" alt="stojaki icons">
+                </div>
+            </div>
+
+            <div class="modals__item" id="item13">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/13.png" alt="stojaki icons">
+                </div>
+            </div>
+
+             <div class="modals__item" id="item14">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/14.png" alt="stojaki icons">
+                </div>
+            </div>
+
+             <div class="modals__item" id="item15">
+                <div class="modals__item--close-window">
+                    <div class="close-window__icon">
+                        <span class="close-icon"></span>
+                        <span class="close-icon"></span>
+                    </div>
+                </div>
+                <div class="modals__item__container">
+                    <div class="modals__item__header">
+                        <h3 class="modals__item__title">Icon Set for Stojaki Szczecin</h3>
+                        <h5 class="modals__item__description">Lorem ipsum dolor sit amet, in graecis insolens accusata vim, detracto tacimates nam eu. Qui ad fabellas facilisi persequeris. Nonumy perfecto reprimique mei ut.</h5>
+                        <div class="modals__item__details">
+                            <div class="modals__item__details__container">
+                                <span class="details__title">TOOLS</span>
+                                <p class="details__description">Illustrator</p>
+                            </div>
+                            <div class="modals__item__details__container">
+                                <span class="details__title">KIND</span>
+                                <p class="details__description">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/15.png" alt="stojaki icons">
                 </div>
             </div>
         </section>
@@ -364,14 +781,14 @@
                 <div class="row contact__links">
                     <div class="col-6 icon__container">
                         <a href="https://github.com/kingasieminiak/" target="_blank" class="social-icon">
-                           <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                               <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
                         <a href="https://linkedin.com/in/kinga-sieminiak" target="_blank" class="social-icon">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
                         <a href="https://www.facebook.com/kinga.sieminiak" target="_blank" class="social-icon">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
                     </div>
                 </div>
             </article>
@@ -379,8 +796,7 @@
             <article class="grid-container">
                 <div class="row">
                     <div class="contact__copy col-12">
-                        <p class="contact__copy--text">DESIGN &amp; DEVELOP BY
-                            <span class="contact__copy__link">ME</span>
+                        <p class="contact__copy--text">DESIGN &amp; DEVELOP BY ME
                         </p>
                     </div>
                 </div>
@@ -389,7 +805,7 @@
 
         <script src="js/jquery.js"></script>
         <script src="js/app.js"></script>
-        <!-- <script src="https://use.fontawesome.com/9050c0e64b.js"></script> -->
+        <script src="https://use.fontawesome.com/9050c0e64b.js"></script>  
 
     </body>
 
