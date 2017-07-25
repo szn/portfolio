@@ -3,5 +3,8 @@ FILES=index.html
 HOST=nieradka.net
 RSYNC=rsync
 
-do:
-	$(RSYNC) --verbose -r $(DIRS) $(FILES) $(HOST):/var/www/try.sieminiak.com/main
+staging:
+	$(RSYNC) --verbose -r $(DIRS) $(FILES) $(HOST):/var/www/staging.sieminiak.com/main
+
+prod:
+	$(RSYNC) --verbose -r $(DIRS) $(FILES) $(HOST):/var/www/sieminiak.com
