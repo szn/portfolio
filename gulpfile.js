@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var cssmin = require('gulp-cssmin');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
@@ -8,7 +7,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
-            outputStyle: 'compressed',
+            outputStyle: 'expanded',
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'))
@@ -18,9 +17,8 @@ gulp.task('prod', function(){
     return gulp.src('scss/style.scss')
         .pipe(sass({
             errLogToConsole: true,
-            outputStyle: 'expanded',
+            outputStyle: 'compressed',
         }))
-   	  .pipe(cssmin())
         .pipe(gulp.dest('css'))
 });
 
