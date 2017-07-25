@@ -61,7 +61,7 @@
         justify-content: space-between;
         max-width: 450px;
 
-         @media(max-width: 500px){
+        @media(max-width: 500px){
             flex-direction: column;
         }
 
@@ -86,6 +86,11 @@
 
             &:hover{
                 color: $main-color;
+            }
+
+            @media(max-width: 500px){
+                display: block;
+                margin-bottom: 1.5em;
             }
         }
     }
