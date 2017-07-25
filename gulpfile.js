@@ -7,7 +7,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
-            outputStyle: 'expanded',
+            outputStyle: 'compressed',
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'))

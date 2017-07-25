@@ -23,7 +23,7 @@ $(function() {
 
 
             } else {
-                headerTitle.css("padding-bottom", "15em");
+                headerTitle.css("padding-bottom", "13.5em");
             }
 
         } else{
@@ -35,7 +35,7 @@ $(function() {
                 burgerMenu.addClass("invisible-burger-menu");
                 $(navButtons).addClass("visible-nav-item");
             } else {
-                headerTitle.css("padding-bottom", "4.5em");
+                headerTitle.css("padding-bottom", "4em");
             }
         }
 
