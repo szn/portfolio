@@ -6,7 +6,7 @@ GULP=./node_modules/gulp/bin/gulp.js
 
 staging:
 	$(GULP) sass
-	$(RSYNC) --verbose -r $(DIRS) $(FILES) $(HOST):/var/www/staging.sieminiak.com/main
+	$(RSYNC) --verbose -r $(DIRS) $(FILES) $(HOST):/var/www/staging.sieminiak.com/
 
 prod:
 	$(GULP) prod
