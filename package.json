@@ -13,5 +13,8 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0"
+  },
+  "dependencies": {
+    "gulp-svgmin": "^1.2.4"
   }
 }

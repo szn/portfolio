@@ -1,5 +1,7 @@
 .about {
-    margin: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 5em;
 }
 
 .about__info--title {
@@ -21,9 +23,22 @@
 
 .about__image {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
 }
+
+// .interests{
+//     padding-top: 3em;
+//     padding-bottom: 1em;
+//     padding-right: 7em;
+//     text-transform: uppercase;
+//     font-size: 0.7em;
+//     font-weight: 600;
+//     color: #C1C0B8;
+// }
+
+
 @media(max-width: 960px) {
     .about__content {
         flex-direction: column-reverse;
@@ -43,6 +58,7 @@
 
     .about__image {
         justify-content: center;
+        align-items: center;
         margin-bottom: 3em;
     }
 }
